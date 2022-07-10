@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+.container {
+    height: 50vh;
+    background-color: #84668f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#dynamicIMG,
+#staticIMG {
+    height: 100%;
+    width: 180px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#staticIMG {
+    background-image: url('./img/biixi0.png');
+}
+
+button {
+    pointer-events: fill;
+    border: 0;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 33px;
+    border-radius: 10px;
+    font-size: large;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: rgb(98, 18, 173);
+    cursor: pointer;
+}
+
+.sax {
+    color: green;
+}
+
+.qalad {
+    color: red;
+}
+
+@media only screen and (max-width: 768px) {
+
+    #dynamicIMG,
+    #staticIMG {
+        width: 250px;
+    }
+}
